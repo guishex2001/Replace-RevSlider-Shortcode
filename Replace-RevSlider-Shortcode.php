@@ -50,10 +50,11 @@ function mostrar_contenido() {
 
     ?>
     <div class="replace-revslider-shortcode">
-        <h1>Replace RevSlider Shortcode</h1>
+        <h1>Bienvenido al Plugin Replace RevSlider Shortcode</h1>
+        <p>Selecciona una página y un slider para reemplazar el shortcode de Revolution Slider.</p>
         <form method="post">
             <label for="page">Selecciona la página:</label>
-            <select name="page" id="page">
+            <select name="page" id="page" style="width: 300px;">
                 <option value="">Selecciona una página</option>
                 <?php foreach ($pages as $page) : ?>
                     <option value="<?php echo $page->ID; ?>"><?php echo $page->post_title; ?></option>
@@ -61,13 +62,66 @@ function mostrar_contenido() {
             </select>
             <br>
             <label for="slider">Selecciona el slider:</label>
-            <select name="slider" id="slider">
+            <select name="slider" id="slider" style="width: 300px;">
                 <!-- Aquí se cargarán dinámicamente los sliders de Revolution Slider -->
             </select>
             <br>
             <input type="submit" name="submit" value="Aplicar cambios">
         </form>
     </div>
+    <style>
+        .replace-revslider-shortcode {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .replace-revslider-shortcode h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .replace-revslider-shortcode p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .replace-revslider-shortcode form {
+            text-align: center;
+        }
+
+        .replace-revslider-shortcode label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .replace-revslider-shortcode select {
+            font-size: 16px;
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .replace-revslider-shortcode input[type="submit"] {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #0073aa;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .replace-revslider-shortcode input[type="submit"]:hover {
+            background-color: #005580;
+        }
+    </style>
     <script>
         // Función para cargar dinámicamente los sliders cuando se seleccione una página
         jQuery(document).ready(function ($) {
