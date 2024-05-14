@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Replace RevSlider Shortcode
+Plugin Name: ReplaceRS-Shortcode
 Description: Plugin para reemplazar un shortcode de Revolution Slider por otro en una página específica.
 Version: 1.0
 Author: guishex2001
