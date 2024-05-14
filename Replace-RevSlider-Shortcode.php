@@ -1,7 +1,8 @@
 <?php
 /*
-Plugin Name: ReplaceRS-Shortcode
-Description: Plugin para reemplazar un shortcode de Revolution Slider por otro en una página específica.
+Plugin Name: ReplaceRSS
+Description: Replace-RevSlider-Shortcode
+Plugin para reemplazar un shortcode de Revolution Slider por otro en una página específica.
 Version: 1.0
 Author: guishex2001
 */
